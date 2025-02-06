@@ -143,38 +143,7 @@
 					"slug": "xx-large"
 				}
 			],
-			"fontFamilies": [
-				{
-					"name": "Manrope",
-					"slug": "manrope",
-					"fontFamily": "Manrope, sans-serif",
-					"fontFace": [
-						{
-							"src": [
-								"file:./assets/fonts/manrope/Manrope-VariableFont_wght.woff2"
-							],
-							"fontWeight": "200 800",
-							"fontStyle": "normal",
-							"fontFamily": "Manrope"
-						}
-					]
-				},
-				{
-					"name": "Fira Code",
-					"slug": "fira-code",
-					"fontFamily": "\"Fira Code\", monospace",
-					"fontFace": [
-						{
-							"src": [
-								"file:./assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2"
-							],
-							"fontWeight": "300 700",
-							"fontStyle": "normal",
-							"fontFamily": "\"Fira Code\""
-						}
-					]
-				}
-			]
+			"fontFamilies": []
 		},
 		"useRootPaddingAwareAlignments": true
 	},
@@ -685,29 +654,9 @@
 			"title": "Header"
 		},
 		{
-			"area": "header",
-			"name": "vertical-header",
-			"title": "Vertical Header"
-		},
-		{
-			"area": "header",
-			"name": "header-large-title",
-			"title": "Header with large title"
-		},
-		{
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
-		},
-		{
-			"area": "footer",
-			"name": "footer-columns",
-			"title": "Footer Columns"
-		},
-		{
-			"area": "footer",
-			"name": "footer-newsletter",
-			"title": "Footer Newsletter"
 		},
 		{
 			"area": "uncategorized",
