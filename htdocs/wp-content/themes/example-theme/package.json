@@ -1,0 +1,23 @@
+{
+	"name": "example-theme",
+	"version": "0.1.0",
+	"description": "Example theme scaffolded from 2025 theme.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build --webpack-src-dir=assets",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style 'assets/css/**/*.scss'",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start --webpack-src-dir=assets"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.10.0",
+		"@wordpress/prettier-config": "^4.17",
+		"path": "^0.12.7",
+		"prettier": "npm:wp-prettier@latest",
+		"webpack-remove-empty-scripts": "^1"
+	}
+}
