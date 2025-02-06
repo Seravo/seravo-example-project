@@ -28,7 +28,7 @@ In the root `package.json` we have defined two workspaces (custom blocks plugin 
 "workspaces": [
     "htdocs/wp-content/plugins/example-blocks",
     "htdocs/wp-content/themes/example-theme",
-   "htdocs/wp-content/themes/example-child-theme"
+    "htdocs/wp-content/themes/example-child-theme"
 ]
  ```
 
@@ -47,11 +47,11 @@ This will run the `build` script defined within the `./htdocs/wp-content/plugins
 Note that `name` property in the workspace `package.json` need to match `-w`option.
 
 - For example `example-blocks` is used in 
- - `npm run build -w=example-blocks`
- - `name` property in `./htdocs/wp-content/plugins/example-blocks/package.json` file 
+    - `npm run build -w=example-blocks`
+    - `name` property in `./htdocs/wp-content/plugins/example-blocks/package.json` file 
 - For example `example-theme` is used in 
- - `npm run build -w=example-theme`
- - `name` property in `./htdocs/wp-content/themes/example-theme/package.json` file
+    - `npm run build -w=example-theme`
+    - `name` property in `./htdocs/wp-content/themes/example-theme/package.json` file
 - Follow the same pattern for new workspaces
 
 ### `--workspaces` option
