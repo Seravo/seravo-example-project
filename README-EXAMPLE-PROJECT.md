@@ -68,3 +68,26 @@ Note that `workspaces` option doesn't seem to work with `start` script. Therefor
 ```
 run-p start:blocks start:theme
 ```
+
+## Example blocks plugin assets are handled automatically
+
+When using the same plugin structure as [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/) creates, all blocks assets are handled automatically.
+
+- By default assets are gererated in `build` folder
+- Blocks `block.json` define the assets and they are also enqueued automatically
+
+## Example theme assets needs `webpack.config.js`
+
+In example theme we need to [configure assets](https://developer.wordpress.org/themes/advanced-topics/build-process/) in `webpack.config.js`.
+
+Basically we are overwriting some  of the `@wordpress/scripts` package configuration with our own:
+
+- Define entry points for your custom CSS and JavaScript files
+- Custom rule for handling font files without a hash in the filename.
+    - This is not necessary step but can be usefull if you preload font in PHP
+    - In other words you will not get random hash in the font file name and you will know the font name to preload
+- The webpack-remove-empty-scripts plugin so that there are no leftover `.js` files mapped to your CSS
+
+### Child theme `webpack.config.js`
+
+You can use similar `webpack.config.js` file in your child theme. Main point is to change entry points to your needs. 
