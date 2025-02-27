@@ -90,4 +90,61 @@ Basically we are overwriting some  of the `@wordpress/scripts` package configura
 
 ### Child theme `webpack.config.js`
 
-You can use similar `webpack.config.js` file in your child theme. Main point is to change entry points to your needs. 
+You can use similar `webpack.config.js` file in your child theme. Main point is to change entry points to your needs.
+
+## How to test
+
+Clone the repo:
+
+```bash
+git clone git@github.com:Seravo/seravo-example-project.git
+```
+
+Go to project folder:
+```bash
+cd seravo-example-project
+```
+
+Create `.env` file:
+```bash
+echo "SITE=wordpress" > .env
+```
+
+Install composer dependencies:
+```bash
+composer install
+```
+
+Start Docker environment:
+```bash
+docker-compose up
+```
+
+At this point you should have local environment in URL `https://wordpress.local`.
+
+Login to WordPress:
+```bash
+user:     vagrant
+password: vagrant
+```
+
+Activate Activate Example theme and Example Blocks plugin.
+
+Install NPM dependencies:
+```bash
+npm install
+```
+
+Test that build process works:
+```bash
+npm run build
+```
+
+Or that build process `start` script works:
+```bash
+npm run start
+```
+
+
+
+
