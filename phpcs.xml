@@ -152,7 +152,7 @@
 
   <!--
     Add some custom sniff rules in this section below. See
-    https://github.com/squizlabs/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties and
+    https://github.com/PHPCSStandards/PHP_CodeSniffer/wiki/Customisable-Sniff-Properties and
     https://github.com/WordPress/WordPress-Coding-Standards/wiki/Customizable-sniff-properties
     for available sniffs and their properties.
   -->
